@@ -1,0 +1,48 @@
+li {
+    height: flex;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.22);
+    padding: 0 3%;
+  }
+  
+  li input {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    height: 50px;
+    transform: scale(1.5);
+  }
+  
+  li span {
+    margin-left: 15px;
+    width: 75%;
+    flex-grow: 1;
+  }
+  
+  li button {
+    height: 30px;
+    width: 70px;
+    background: rgb(255, 96, 96);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  li button:hover {
+    background: red;
+    cursor: pointer;
+  }
+
+  li box{
+    width: windowWidth * 0.3;
+    border: solid gray;
+    border-radius: 10px;
+    height: windowHeight * 0.25;
+    display:wrapped;
+   
+
+  }
+  
