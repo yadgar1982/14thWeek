@@ -11,20 +11,9 @@ const ReviewList = ({ rating , reviews, removeReview, toggleReview, Movie }) => 
   //destructuring reviews, removereview, and togglereview from props
 
   return (
-    
-    
     <ul>
-      <li className="box">
-  
 
-      </li>
-
-      <li>
-       
-        {Movie}</li>
-        
-
-      
+      {Movie}
       {reviews.length > 0 ? (
         reviews.map(
           (
@@ -35,7 +24,6 @@ const ReviewList = ({ rating , reviews, removeReview, toggleReview, Movie }) => 
           
               key={Review.id} //setting the key prop to the id of the review object
               {...review} //spreading the review object as props to the review component
-             
               removeReview={removeReview} //passing down the removereview function as a prop
               toggleReview={toggleReview} //passing down the togglereview function as a prop
               
@@ -48,9 +36,10 @@ const ReviewList = ({ rating , reviews, removeReview, toggleReview, Movie }) => 
           )
         )
       ) : (
-        <h2 style={{ textAlign: "center", color: "DarkGreen" }}>
-          No Reviews!
-        </h2>
+       
+         <h2 style={{ textAlign: "center", color: "blue" }}>
+         No Review Availible!
+       </h2>
       )}
       
       

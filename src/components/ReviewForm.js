@@ -46,7 +46,7 @@ function ReviewForm(props) {
   const toggleReview = (id) => {
     const newReviews = reviews.map(
       (review) =>
-        review.id === id ? { ...review } : review //mapping over current reviews and updating the completed property of the review that matches the id
+        review.id === id ? { ...review, completed: !review.completed } : review //mapping over current reviews and updating the completed property of the review that matches the id
     );
     setReviews(newReviews); //updating the reviews state with the newreviews array
   };
